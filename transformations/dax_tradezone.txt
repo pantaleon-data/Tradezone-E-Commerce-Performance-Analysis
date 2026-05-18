@@ -1,0 +1,324 @@
+revenue LM = 
+VAR _CM = [total_revenue]
+VAR _PM =
+CALCULATE(
+    [total_revenue],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+_________________________________________
+CF rev. LY = 
+VAR _CY = [total_revenue]
+VAR _PY =
+CALCULATE(
+    [total_revenue],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+__________________________________________
+orders LM = 
+VAR _CM = [total_orders]
+VAR _PM =
+CALCULATE(
+    [total_orders],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+________________________________________________
+orders LY = 
+VAR _CY = [total_orders]
+VAR _PY =
+CALCULATE(
+    [total_orders],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+__________________________________________________
+CF orders LY = 
+VAR _CY = [total_orders]
+VAR _PY =
+CALCULATE(
+    [total_orders],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+________________________________________________
+CF orders LM = 
+VAR _CM = [total_orders]
+VAR _PM =
+CALCULATE(
+    [total_orders],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+________________________________________________
+AOV LY = 
+VAR _CY = [AOV]
+VAR _PY =
+CALCULATE(
+    [AOV],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+_______________________________________________
+AOV LM = 
+VAR _CM = [AOV]
+VAR _PM =
+CALCULATE(
+    [AOV],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+____________________________________________
+CF AOV LM = 
+VAR _CM = [AOV]
+VAR _PM =
+CALCULATE(
+    [AOV],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+__________________________________________
+CF AOV LY = 
+VAR _CY = [AOV]
+VAR _PY =
+CALCULATE(
+    [AOV],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+________________________________________
+CF avg.del.days LY = 
+VAR _CY = [avg_delivery_days]
+VAR _PY =
+CALCULATE(
+    [avg_delivery_days],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+______________________________________
+CF avg.del.days LM = 
+VAR _CM = [avg_delivery_days]
+VAR _PM =
+CALCULATE(
+    [avg_delivery_days],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+_____________________________________
+avg.del.days LM = 
+VAR _CM = [avg_delivery_days]
+VAR _PM =
+CALCULATE(
+    [avg_delivery_days],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+_______________________________________
+avg.del.days LY = 
+VAR _CY = [avg_delivery_days]
+VAR _PY =
+CALCULATE(
+    [avg_delivery_days],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+____________________________________
+avg.rat. LM = 
+VAR _CM = [avg_ratin]
+VAR _PM =
+CALCULATE(
+    [avg_ratin],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+______________________________________
+avg.rat. LY = 
+VAR _CY = [avg_ratin]
+VAR _PY =
+CALCULATE(
+    [avg_ratin],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, UNICHAR(11165) & " " & FORMAT(_perc, "0.0%"),
+    _perc < 0, UNICHAR(11167) & " " & FORMAT(_perc * - 1, "0.0%"),
+    FORMAT(_perc, "0.0%")
+)
+RETURN
+_format
+__________________________________
+CF avg.rat. LM = 
+VAR _CM = [avg_ratin]
+VAR _PM =
+CALCULATE(
+    [avg_ratin],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+VAR _perc = DIVIDE(_CM - _PM, _PM)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+________________________________
+CF avg.rat. LY = 
+VAR _CY = [avg_ratin]
+VAR _PY =
+CALCULATE(
+    [avg_ratin],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+VAR _perc = DIVIDE(_CY - _PY, _PY)
+VAR _format =
+SWITCH(
+    TRUE(),
+    _perc > 0, "Green",
+    _perc < 0, "Red",
+    "Grey"
+)
+RETURN
+_format
+_____________________________
