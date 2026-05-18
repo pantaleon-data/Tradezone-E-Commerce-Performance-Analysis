@@ -12,7 +12,7 @@ The project involved extensive SQL-based data cleaning, multi-table relational m
 
 ## Dashboard Preview
 
-![](images/dashboard.png)
+![](dashboard/dashboard.png)
 
 ---
 
