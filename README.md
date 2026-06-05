@@ -84,6 +84,7 @@ The cleaning process emphasized preserving analytical integrity while ensuring c
 - Interactive KPI Cards
 - Advanced Combo Charts
 - Dynamic Filtering & Slicers
+
 DAX can be found [here](transformations/dax_tradezone.txt)
 
 ### Data Modeling
