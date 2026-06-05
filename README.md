@@ -14,6 +14,7 @@ The project involved extensive SQL-based data cleaning, multi-table relational m
 
 ![](dashboard/dashboard.png)
 
+- Explore the Dashboard [here](dashboard/tradezone_project.pbix)
 ---
 
 ## Data Structure Overview
@@ -62,6 +63,8 @@ Several data quality issues were addressed during preprocessing, including:
 - Date formatting corrections
 - Derived metric creation using SQL views
 
+See data cleaning queries [here](transformations/data_cleaning.sql)
+
 The cleaning process emphasized preserving analytical integrity while ensuring consistency across transactional relationships.
 
 ---
@@ -81,6 +84,7 @@ The cleaning process emphasized preserving analytical integrity while ensuring c
 - Interactive KPI Cards
 - Advanced Combo Charts
 - Dynamic Filtering & Slicers
+DAX can be found [here](transformations/dax_tradezone.txt)
 
 ### Data Modeling
 
@@ -169,8 +173,6 @@ This creates lower operational payment risk, improved customer flexibility, and 
 
 The findings also suggest that customers are relatively comfortable using multiple transaction channels across the platform.
 
-![](images/revenue_by_payment_method.png)
-
 ---
 
 ### Product Ratings: Average Unit Price vs Product Count
@@ -190,8 +192,6 @@ Several interpretations are possible. Customers may prioritize product necessity
 The low product count among poorly-rated products may also suggest weak customer demand, poor retention, or product discontinuation risks.
 
 This insight highlights the importance of analyzing pricing, ratings, and demand together rather than treating ratings as isolated performance indicators.
-
-![](images/product_rating.png)
 
 ---
 
@@ -214,8 +214,6 @@ This creates major opportunities for loyalty programs, premium memberships, pers
 However, it also introduces concentration risk. If high-spending customers reduce activity, revenue performance could decline significantly.
 
 The business should therefore prioritize both retention of premium customers and gradual expansion of the mid-spending customer segment.
-
-![](images/customer_segments.png)
 
 ---
 
