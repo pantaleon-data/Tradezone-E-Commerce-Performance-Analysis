@@ -1,4 +1,4 @@
-# Tradezone-E-Commerce-Performance-Analysis
+# Tradezone E-Commerce Operations and Customer Analytics
 
 ## Background and Overview
 
