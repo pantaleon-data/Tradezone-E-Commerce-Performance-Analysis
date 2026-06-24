@@ -1,4 +1,4 @@
-# Tradezone E-Commerce Operations and Customer Analytics
+# E-Commerce Operations and Customer Analytics
 
 ## Background and Overview
 
@@ -108,7 +108,7 @@ DAX can be found [here](transformations/dax_tradezone.txt)
 
 ## Executive Summary
 
-The Tradezone analysis revealed a high-performing e-commerce ecosystem that generated over ₦1.02 billion in revenue from approximately 3,000 orders, with an impressive Average Order Value (AOV) of ₦341.85k. Operationally, the platform maintained an average delivery timeline of 4.87 days and an overall customer rating of 3.66/5, indicating relatively stable fulfilment performance and customer satisfaction.
+The analysis revealed a high-performing e-commerce ecosystem that generated over ₦1.02 billion in revenue from approximately 3,000 orders, with an impressive Average Order Value (AOV) of ₦341.85k. Operationally, the platform maintained an average delivery timeline of 4.87 days and an overall customer rating of 3.66/5, indicating relatively stable fulfilment performance and customer satisfaction.
 
 Revenue trends showed strong seasonal behavior, with sales steadily increasing from August before peaking during the holiday season at nearly ₦150 million. Interestingly, while order volume surged during the holiday period, AOV declined simultaneously, suggesting that increased transactions were likely driven by promotional pricing, seasonal discounts, or lower-ticket purchases despite the dataset not explicitly containing discount information.
 
